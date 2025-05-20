@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class ApiTest {
 
     @Test
-    public void testGetRequest‡‡() {
+    public void testGetRequest() {
         HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/1")
                 .asJson();
 
