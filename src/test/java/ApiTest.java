@@ -3,14 +3,14 @@ import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquASDASDSADals;
+import static org.junit.jupiter.api.Assertions.assertals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ApiTest {
 
     @Test
-    public void testGetRequestääää() {
-        HttpResponse<JsonNode> response = UniresASDSADt.get("https://jsonplaceholder.typicode.com/posts/1")
+    public void testGetRequest() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/1")
                 .asJson();
 
         assertEquals(200, response.getStatus());
