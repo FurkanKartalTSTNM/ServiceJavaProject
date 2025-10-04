@@ -134,6 +134,7 @@ public class ApiTest {
     public void testGetUserDetails() {
         HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/users/1")
                 .asJson();
+        System.out.println(response.getBody().toString());
 
         assertEquals(200, response.getStatus());
         assertEquals("Leanne Graham", response.getBody().getObject().getString("name"));
