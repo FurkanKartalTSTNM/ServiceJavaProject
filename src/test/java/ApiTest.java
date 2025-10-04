@@ -20,7 +20,7 @@ public class ApiTest {
         System.out.println(body.toString());
         assertEquals(1, body.getObject().getInt("id"));
 
-        System.out.println("Dev branch test");
+        System.out.println("Master branch test Conflict");
     }
 
     @Test
