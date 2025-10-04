@@ -3,7 +3,7 @@ import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ApiTest {
@@ -15,8 +15,8 @@ public class ApiTest {
 
         assertEquals(200, response.getStatus());
         JsonNode body = response.getBody();
-        System.out.println(body.toString());
 
+        System.out.println(body.toString());
         assertEquals(1, body.getObject().getInt("id"));
     }
 
