@@ -14,6 +14,7 @@ public class ApiTest {
                 .asJson();
 
         assertEquals(200, response.getStatus(), "master: status 200 bekleniyor");
+        System.out.println("Response Body: " + response.getBody().toString());
         JsonNode body = response.getBody();
 
         System.out.println(body.toString());
