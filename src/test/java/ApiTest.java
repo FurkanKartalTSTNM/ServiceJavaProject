@@ -10,6 +10,15 @@ public class ApiTest {
 
     @Test
     public void testGetRequest() {
+
+        String executionId = System.getenv("EXECUTION_ID");
+        String scenarioId = System.getenv("SCENARIO_ID");
+        String testResultId = System.getenv("TEST_RESULT_ID");
+
+        System.out.println("EXECUTION_ID: " + executionId);
+        System.out.println("SCENARIO_ID: " + scenarioId);
+        System.out.println("TEST_RESULT_ID: " + testResultId);
+        
         HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/1")
                 .asJson();
 
